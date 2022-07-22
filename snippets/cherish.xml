@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="github"
+          fetch="https://github.com/TheUbuntuUser"
+          revision="ten" />
+
   <remote name="ten"
           fetch="https://github.com/CherishOS"
           revision="ten" />
@@ -23,7 +27,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="ten" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="ten" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="github" />
   <project path="frameworks/native" name="android_frameworks_native" remote="ten" />
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="ten" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="ten" />
